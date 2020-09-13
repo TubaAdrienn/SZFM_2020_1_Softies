@@ -1,3 +1,3 @@
-# Szoftverfejlesztési módszertanok beadandó
+# SZFM Project
 
-Egyszerű vicc portál JavaScript, HTML és CSS felhasználásával.
+Simple web portal displaying jokes created by using HTML, CSS and JavaScript.
