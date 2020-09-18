@@ -1,6 +1,6 @@
-# SZFM_2020_1_
+# SZFM_2020_1_Softies
 
-This repository contains a simple web portal displaying jokes created by using HTML, CSS and JavaScript. It will display different kind of jokes by using 
+This repository contains a simple web portal displaying jokes. The portal is created by using HTML, CSS and JavaScript. It will display different kind of jokes depending on the users' chosen categories. The site keeps the users up-to-date with the most liked joke of the day and their jokes of preference.
 
 ## Team: Sofities  :mortar_board:
 
@@ -13,13 +13,13 @@ This repository contains a simple web portal displaying jokes created by using H
 
 * VSCode
 
-### Programming languages
+### Programming languages :diamond_shape_with_a_dot_inside:
 
 * JavaScript
 * HTML
 * CSS
 
-### Operating system
+### Operating system :computer:
 
 * Windows 10
 
