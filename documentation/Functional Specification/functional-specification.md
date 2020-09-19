@@ -33,12 +33,15 @@ We want to give a web appearance to the contents stored in newspapers, comics, F
 
 ## 7. Usage instances
 <img src="img/Usage Instances.png"
-     alt="MUsage Instances UML"
+     alt="Usage Instances UML"
      style="float: left; margin-right: 10px;" />
 
 ## 8. Compliance - How the usage instances satisfy the requirements
 
 ## 9. Visual Design
+<img src="img/visual design.png"
+     alt="Visual Design"
+     style="float: left; margin-right: 10px;" />
 
 ## 10. Scenarios
 Opening the website should result in the main screen displaying which should contain the tabs to choose from the categories and the place to display the jokes. On default it should display random jokes. On one side the Joke of the Day should take place, which should not change while navigating on the website.
