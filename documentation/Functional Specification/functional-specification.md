@@ -18,6 +18,11 @@ We are a cheerful organization of young web developers, with a goal in mind to p
 We want to give a web appearance to the contents stored in newspapers, comics, Facebook posts and text files. With the constant development of technology, these physical contents (comics, newspaper etc.) slowly start to disappear. Nowadays most people have mobile phones, which has become almost essential to the everyday life. Keeping up with the current technology, we want to brighten your mood if you have boring moments, with a help of just a few clicks or taps on our website. Visitors could spend their time here and creating a good atmosphere for themselves or others. The website has to be easy to access and navigate for every user. If possible, it should have a responsive interface. The website should be easy to maintain. It should be possible to filter the content to make it child-friendly or not. It has to contain a search bar so that people can find jokes for their own preferences.
 
 ## 5. Requested business process modell
+* Option to add jokes to "Liked jokes", where you can find your favorite content. → Store your favorite content
+* Categories menu bar. → Filtering by categories
+* Search bar. → Search option
+* Fresh content every day. → Joke of the day
+* The display of the website should be compatible with as many devices as possible. → Responsive display 
 
 ## 6. List of requirements
 
