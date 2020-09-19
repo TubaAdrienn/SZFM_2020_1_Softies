@@ -27,6 +27,9 @@ We want to give a web appearance to the contents stored in newspapers, comics, F
 ## 6. List of requirements
 
 ## 7. Usage instances
+<img src="img/Usage Instances.png"
+     alt="MUsage Instances UML"
+     style="float: left; margin-right: 10px;" />
 
 ## 8. Compliance - How the usage instances satisfy the requirements
 
