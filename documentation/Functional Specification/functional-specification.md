@@ -25,6 +25,11 @@ We want to give a web appearance to the contents stored in newspapers, comics, F
 * The display of the website should be compatible with as many devices as possible. → Responsive display 
 
 ## 6. List of requirements
+*   Easy to operate
+*   Responsive web design
+*   Filterability of harmful content
+*   Search engine implementation
+*   Storing favorite jokes
 
 ## 7. Usage instances
 <img src="img/Usage Instances.png"
