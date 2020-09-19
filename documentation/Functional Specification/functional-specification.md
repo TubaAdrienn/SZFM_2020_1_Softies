@@ -1,31 +1,32 @@
-## System goals
+## 1. System goals
 The system goal is to provide a website that display jokes that belong to different kind of categories for visitors to binge trough.
 * One goal is that visitors should be able to search and filter the jokes based on their categories
 * It should be possible to save favourite jokes locally that could be displayed later on the screen
 * Filtering not-safe-for-work content should also be possible to achieve a child-friendly website
 * A part of the website should display the Joke of the Day, which should stay the same the whole day, but should be generated randomly each day
 
-## Not system goals
+## 2. Not system goals
 * User registration
 * Displaying animations, videos 
 * Sending own jokes
 * Saving jokes to a database
 
-## Current situation description
+## 3. Current situation description
+We are a cheerful organization of young web developers, with a goal in mind to put a smile on the faces of as many people as possible with our projects. In our rushing modern world people tend to get lost in their boring everyday life, so we want to make our visitors' everydays a little brighter. At the moment, no one of our acquaintances have a favorite joke site, and jokes only go the round.
 
-## Desired system description
+## 4. Desired system description
 
-## Requested business process modell
+## 5. Requested business process modell
 
-## List of requirements
+## 6. List of requirements
 
-## Usage instances
+## 7. Usage instances
 
-## Compliance - How the usage instances satisfy the requirements
+## 8. Compliance - How the usage instances satisfy the requirements
 
-## Visual Design
+## 9. Visual Design
 
-## Scenarios
+## 10. Scenarios
 Opening the website should result in the main screen displaying which should contain the tabs to choose from the categories and the place to display the jokes. On default it should display random jokes. On one side the Joke of the Day should take place, which should not change while navigating on the website.
 Options:
 * Under the jokes, there should be a button. By clicking on it, a new joke should be queried from the WebAPI.
@@ -33,8 +34,8 @@ Options:
 * A button should be displayed that controls whether the website displays the NSFW content or not
 * Saving favourite jokes locally by clicking a button in the joke's displaying box
 
-## Function - requirement compliance
+## 11. Function - requirement compliance
 
-## Glossary
+## 12. Glossary
 * [API](https://en.wikipedia.org/wiki/Web_API)
 * [Responsive webdesign](https://en.wikipedia.org/wiki/Responsive_web_design)
