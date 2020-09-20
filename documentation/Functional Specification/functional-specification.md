@@ -42,9 +42,9 @@ In this case the only actors on the website are visitors, who do not necessarily
      style="float: left; margin-right: 10px;" />
 
 ## 8. Compliance - How the usage instances satisfy the requirements
-* Main page: After enter the webpage URL, the items displayed on the main screen in the browser are easy to use due to the clean visual design. Due to the responsive web design, the home page also provides easy transparency from tablet or phone.
-* Categories: In the header, it is possible to switch between categories by selecting the Category button, and this will display various jokes on the home page screen.
-* Like Button: The Like button allows you to save your favorite jokes to local storage, which can be seen again later when the web page is reopened.
+* Main page: After entering the webpage URL, the items displayed on the main screen in the browser are easy to use due to the clean visual design. Due to the responsive web design, the home page also provides easy transparency from tablet or phone
+* Categories: In the header, it is possible to switch between categories by selecting the Category button, and this will display various jokes on the home page screen
+* Like Button: The Like button allows you to save your favorite jokes to local storage, which can be seen again later when the web page is reopened
 * Search Bar implementation allows you to search for jokes by words
 * Next to the Search bar, there is a checkbox, which you can filter the jokes based on their offensive nature
 * Gallery button is available by pressing meme gallery
