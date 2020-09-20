@@ -1,8 +1,16 @@
 # Simple Joke Site
 
 ## System goals
+One of our goals regarding the system is to keep it 7/24 available for users to access. The design of the portal is going to be responsive in order to make it possible to use our system, not decreasing in quality, on different size of devices' screen. One of the basic features of the system is the ability to react to users' activity. One of those are clicking and typing in order to fulfill the desire of the user. Other features are the ability to switch between menu items, search between categories and filter the data the user is looking for. Retrieving the jokes are going to happen with the usage of an API. For the jokes random generator is going to be coded and then display the generated jokes to the main page.
+
 
 ## Not system goals
+* Administration of users
+* Enable registration
+* Enable log in
+* Enable user to post content on the site
+* Displaying animations and videos on the site
+* Unavailability
 
 ## Project plan
 * Project roles, responsibilities
