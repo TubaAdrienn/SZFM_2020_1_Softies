@@ -143,7 +143,25 @@ Saving the data will use the localStorage gives an oppotunity to save a string w
 * Client-side classes (html/css - homepage.html, gallery.html, favjokes.html)
 
 ## 12. Test design
+The reason we need test design is noone can write perfect programs, so we need to test for the bugs and correct it. There are several ways we can test a program:
+* Black-box(Tests are based on specification)
+* White-box(Tests are based on source code)
+* Grey-box(Test are based on part of the source code)
 
+The offered test is black-box test, because it needs to be tested for the following features:
+* Every button is working its specified way(click test)
+* Every link on the site goes to the correct site
+* Every picture on the site appears correctly
+* By resizing the page every element appears where it should be
+* Testing on laptop/pc
+* Testing on phone/tablet
+* Search bar works correctly
+* Check box works correctly
+* Liked jokes are being saved
+* Joke of the Day generated everyday
+* Categories drop menu works correctly
+
+After these tests we should give it to friends / acquaintances to test the page because we would be biased about the result and thus the final result of the test would not be appropriate.
 
 ## 13. Installation design
 * Have an electrical device that is functional and capable of accessing the Internet (mobile, PC, etc..)
@@ -151,6 +169,7 @@ Saving the data will use the localStorage gives an oppotunity to save a string w
 * Internet access
 * Download/install any web browser
 * Type the URL of the page in the title bar
+
 ## 14. Maintenance design
 With the constant development of informatics, we want to keep ourselves up-to-date with technologies, and thus we consider it important to maintain our website.
 
