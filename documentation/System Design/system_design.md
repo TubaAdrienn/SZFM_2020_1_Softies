@@ -1,8 +1,7 @@
 # Simple Joke Site
 
 ## System goals
-One of our goals regarding the system is to keep it 7/24 available for users to access. The design of the portal is going to be responsive in order to make it possible to use our system, not decreasing in quality, on different size of devices' screen. One of the basic features of the system is the ability to react to users' activity. One of those are clicking and typing in order to fulfill the desire of the user. Other features are the ability to switch between menu items, search between categories and filter the data the user is looking for. Retrieving the jokes are going to happen with the usage of an API. For the jokes random generator is going to be coded and then display the generated jokes to the main page.
-
+One of our goals regarding the system is to keep it 7/24 available for users to access. The design of the portal is going to be responsive in order to make it possible to use our system, not decreasing in quality, on different size of devices' screen. One of the basic features of the system is the ability to react to users' activity. One of those are clicking and typing in order to fulfill the desire of the user. Other features are the ability to switch between menu items, search between categories and filter the data the user is looking for. Retrieving the jokes are going to happen with the usage of an API. This API generates the jokes randomly so the website displays randomly generated jokes on the main page.
 
 ## Not system goals
 * Administration of users
@@ -10,30 +9,71 @@ One of our goals regarding the system is to keep it 7/24 available for users to 
 * Enable log in
 * Enable user to post content on the site
 * Displaying animations and videos on the site
+* Subscribing to newsfeed
 * Unavailability
 
 ## Project plan
-* Project roles, responsibilities
-* Project workers and their responsibilities
-* Schedule
-* Milestones
+First and foremost the most important part of working in a group is dividing responsibility and different kind of tasks fairly and evenly. We are aware that we have different kind of strength when it comes to different parts of development so we strive for equality: two people of our group will be responsible for the visual design of our webpage and two people will be in charge of creating the backend code. It doesn't mean total separation, tasks will be discussed thoroughly when questions arise.
+
+Positions:
+ * Anna Egyed - Backend (JavaScript)
+ * Adrienn Tuba - Backend (JavaScript)
+ * Csaba Szilágyi - Frontend (HTML/CSS)
+ * Mátyás Fenyvesi - Frontend (HTML/CSS)
+
+Our schedule is already started:
+* We have already discussed the plans and requirement scpecifications beforehand, we cleared up what the aim of the website is. 
+* The next step was to create the function specification where we cleared up the functional details of the website and anything that needed clarification.
+* The current step is creating a system design where further functional and systemic details should be clarified.
+* And the last milestone is the actual programming and testing of the product
 
 ## Business process model
-* Business operators
-* Business processes
-* Business entities
+ Opening the website results in the home page which gives the visitor the default jokes from any categories and the navigation bar will offer different kind of option to filter the content. 
+* Home: The Home button will navigate us back to the default home page where jokes will be displayed randomly unless a category is chosen. Also on the home page the Joke of the Day will be placed which stays the same all day. This is the main part of the website, this is where you can choose your favourite jokes and save them or just have a good laugh on a rainy day.
+* Categories: The categories tab will give the opportunity to filter the jokes by chosing one of the possible categories. 
+* The Gallery will contain pictures of memes that could also entertain the visitors of this website, since nowadays memes seem to be just as popular as written jokes.
+* The Your Liked Jokes tab will give you the opportunity to take a look at your liked jokes so you can always visit the website again and get back your saved items.
+* Searchbar: In case you forgot to save a joke or you just look for something particular, there is an option to search for that joke amongst the others by words.
 
 ## Requirements
-* Functional requirements
-* Non-functional requirements
-* Legal regulations, standards
+* Easy to operate
+* Responsive web design
+* Filterability of harmful content
+* Search engine implementation
+* Chosing jokes by categories
+* Ability to store favourite jokes
+* Gallery of memes with funny pictures created in .jpeg or .png
 
 ## Functional design
-* System operators
-* System usage and execution
-* Presenters
-* Menu hierarchies
-* Screen design
+Main Page:
+* The user after visiting our site's URL will encounter with the main page. 
+* Jokes, random generated by the WebAPI are listed here and displayed, regardless of any category.
+* Joke of the day is showed on the main page. It is always regenerated after 24 hours.
+
+* Display:
+     Jokes have own rectangle boxes with a colored header and a box for signing whether the user liked
+     the joke or not.
+
+Menu bar:
+In the menu bar, the menu items are buttons with the ability to redirect the user to another pages.
+* Category button: Clicking this button the user will open a drop-down menu of categories he could chose from.
+* Gallery button: Clicking this button the user will be redirected to a page filled with meme pictures.
+* Your liked jokes button: Clicking this button the user will be redirected to a page filled with his  favorite jokes.The jokes are saved here after the user tick the little boxes signed by the text "like".
+
+Filter box:
+* Ticking this box makes possible for the user to filter the content depending on the audience (child/adult).
+
+Search bar:
+* The user is able to type here the content he is looking for.
+
+More button:
+* Clicking this button the user is able to generate more jokes to the main page.
+
+Your liked jokes page:
+* Here the user finds the jokes he liked before. The user is able to rewind the jokes he liked and with the More button he is able to load more jokes. The user is able to go back to the main page or visit the gallery to look for memes.
+
+Gallery page:
+* Here the user finds famous memes. Using the More button he is able to load more memes. The user is able to go back to the main page or visit the jokes he liked.
 
 ## Physical environment
 * Purchased software components and external systems
@@ -54,14 +94,33 @@ One of our goals regarding the system is to keep it 7/24 available for users to 
 * Security functions
 
 ## Database design
-* Logical data model
-* Stored methods
-* Physical data model generated by SQL script
+This application doesn't use MySQL or anything that could be considered traditional database. It retrieves its data from a WebAPI and works with its content and saves the liked jokes to a local storage that is a readonly property of the document, in this case browser, visitors open the webpage. So everyone can save in and read from it locally without maintaining a database.
+
+The API doesn't directly send data though, it works with promises that sends arrays with different kind of informations. A typical response from the API looks like this: 
+
+    {joke: {…}}
+    joke:
+        category: "Programming"
+        error: false
+        flags: {nsfw: false, religious: false, political: false, racist: false, sexist: false}
+        id: 2
+        joke: "A guy walks into a bar and asks for 1.4 root beers.↵The bartender says "I'll have to charge you extra, that's a root beer float".↵The guy says "In that case, better make it a double.""
+        lang: "en"
+        type: "single"
+        __proto__: Object
+     __proto__: Object
+
+According to the URL the fetch request uses, filtering is possible on the available data by blocking out flags or choosing categories.
+
+Saving the data will use the localStorage gives an oppotunity to save a string with an ID to retrieve it later. The ID can be anything, it will treat is as a string. The actual value can be anything: the magic of modern technology and JavaScript can achieve the power of saving even an array or an object. In our case a simple string will be enough.
+
+<img src="lcst.png"
+     alt="Local Storage"/>
 
 ## Implementation design:
-* Presistence classes
-* Business logic classes
-* Client-side classes
+* Presistence classes (dao)
+* Business logic classes (controller)
+* Client-side classes (html/css)
 
 ## Test design
 

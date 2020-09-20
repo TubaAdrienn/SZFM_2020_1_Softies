@@ -1,24 +1,26 @@
 ## 1. System goals
 The system goal is to provide a website that display jokes that belong to different kind of categories for visitors to binge trough.
 * One goal is that visitors should be able to search and filter the jokes based on their categories
-* It should be possible to save favourite jokes locally that could be displayed later on the screen
+* It should be possible to save favourite jokes to the local storage that could be displayed later on the screen
 * Filtering not-safe-for-work content should also be possible to achieve a child-friendly website
 * A part of the website should display the Joke of the Day, which should stay the same the whole day, but should be generated randomly each day
+* The visitors should be able to search jokes by words
 
 ## 2. Not system goals
 * User registration
 * Displaying animations, videos 
 * Sending own jokes
-* Saving jokes to a database
+* Saving jokes to a MySQL database
+* Unavailability
 
 ## 3. Current situation description
-We are a cheerful organization of young web developers, with a goal in mind to put a smile on the faces of as many people as possible with our projects. In our rushing modern world people tend to get lost in their boring everyday life, so we want to make our visitors' everydays a little brighter. At the moment, no one of our acquaintances have a favorite joke site, and jokes only go the round.
+We are a cheerful organization of young web developers, with a goal in mind to put a smile on the faces of as many people as possible with our projects. In our rushing modern world people tend to get lost in their boring everyday life, so we want to make our visitors' everydays a little brighter. At the moment, no one of our acquaintances have a favorite joke site, and jokes only go the round. 
 
 ## 4. Desired system description
 We want to give a web appearance to the contents stored in newspapers, comics, Facebook posts and text files. With the constant development of technology, these physical contents (comics, newspaper etc.) slowly start to disappear. Nowadays most people have mobile phones, which has become almost essential to the everyday life. Keeping up with the current technology, we want to brighten your mood if you have boring moments, with a help of just a few clicks or taps on our website. Visitors could spend their time here and creating a good atmosphere for themselves or others. The website has to be easy to access and navigate for every user. If possible, it should have a responsive interface. The website should be easy to maintain. It should be possible to filter the content to make it child-friendly or not. It has to contain a search bar so that people can find jokes for their own preferences.
 
 ## 5. Requested business process modell
-* Option to add jokes to "Liked jokes", where you can find your favorite content. → Store your favorite content
+* Option to add jokes to "Liked jokes", where you can find your favorite content. → Store your favorite content to a local storage
 * Categories menu bar. → Filtering by categories
 * Search bar. → Search option
 * Fresh content every day. → Joke of the day
@@ -27,16 +29,18 @@ We want to give a web appearance to the contents stored in newspapers, comics, F
 ## 6. List of requirements
 *   Easy to operate
 *   Responsive web design
+*   Filtering jokes by categories
 *   Filterability of harmful content
 *   Search engine implementation
 *   Storing favorite jokes
-
+*   Meme gallery
 ## 7. Usage instances
 <img src="img/Usage Instances.png"
      alt="Usage Instances UML"
      style="float: left; margin-right: 10px;" />
 
 ## 8. Compliance - How the usage instances satisfy the requirements
+
 
 ## 9. Visual Design
 <img src="img/home page.png"
@@ -50,8 +54,11 @@ Options:
 * Choosing the category results in only displaying the jokes that belong in that category
 * A button should be displayed that controls whether the website displays the NSFW content or not
 * Saving favourite jokes locally by clicking a button in the joke's displaying box
+* By clicking on the "about us" menu item the user will be redirected to a page full of memes
+* By clicking on the "your liked jokes" menu item the user will be redirected to a page filled with the jokes the user saved with clicking the box in the corner of the joke
 
 ## 11. Function - requirement compliance
+The desire for responsive web design that is drawn up in the requirements specification, so far will be fulfilled by the fact that the project will be created using the Bootstrap framework in addition to the html / css structure, which will ensure the responsive properties. Since we are talking about modern web pages, today’s designs almost require simplicity and clarity.That is what we strive for too, as it is seen in the screen design. The black-and-white-pastel color scheme and the clearly visible, distinctive elements ensure easy navigation on the website. The query of the jokes will be executed by a WebAPI, which can be used for free by anyone, so database management problems are out of scope along the way. This WebAPI allows the developer to filter further the retrieved data and it enables to meet with additional requirements in the future. We strive to create the website in a browser-independent way, so despite the usage of different browsers the portal will look the same in every of them.
 
 ## 12. Glossary
 * [API](https://en.wikipedia.org/wiki/Web_API)
