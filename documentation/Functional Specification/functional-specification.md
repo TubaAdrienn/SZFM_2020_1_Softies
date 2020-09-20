@@ -50,11 +50,13 @@ First of all, the main page:
      alt="Visual design for home page"
      style="float: left; margin-right: 10px;" />
 Got a clean and simple visual design. And have talkative menu buttons, which makes the website easy to operate. Also have a filtering option, a search bar, and we can search after jokes in several categories with the "categories" drop-down menu.
+
 Next page is a gallery:
 <img src="img/gallery.png"
      alt="Visual design for gallery"
      style="float: left; margin-right: 10px;" />     
 The gallery is even simpler than the home page, here only the pictures are located, and the menu buttons for switching between pages.
+
 Last but not least we have a visual design for the "your liked jokes" page:
 <img src="img/your liked jokes.png"
      alt="Visual design for your liked jokes page"
