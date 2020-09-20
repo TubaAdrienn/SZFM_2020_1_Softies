@@ -151,3 +151,11 @@ Saving the data will use the localStorage gives an oppotunity to save a string w
 * Download/install any web browser
 * Type the URL of the page in the title bar
 ## 14. Maintenance design
+With the constant development of informatics, we want to keep ourselves up-to-date with technologies, and thus we consider it important to maintain our website.
+
+List of maintenance tasks:
+* Bug fixes
+* Improving user experience based on feedback
+* Full operation of website functions
+* Add, create, delete pages as required
+* Avoid website downtime
