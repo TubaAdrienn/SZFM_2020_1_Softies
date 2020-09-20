@@ -76,11 +76,21 @@ Gallery page:
 * Here the user finds famous memes. Using the More button he is able to load more memes. The user is able to go back to the main page or visit the jokes he liked.
 
 ## Physical environment
-* Purchased software components and external systems
-* Hardware and network topology
-* Physical subsystems
-* Development tools
-* Frameworks
+
+**Purchased software components and external systems:** The only external system we use is the [RapidAPI's](http://rapidapi.com/) [JokeAPIv2](https://sv443.net/jokeapi/v2/#joke-type) which is a RESTful API that serves the jokes. It can be used freely.
+
+**Frontend:**
+* Visual Studio Code - HTML and CSS, offers a great deal of different kind of tools and extensions
+* Sublime Text 
+
+**Backend**
+* Visual Studio Code - Extensions for JavaScript (ES6), Live Server
+
+**Other Environments**
+* Mozilla - Web Browser
+* Google Chrome - Web Browser
+* Safari - Mac OS X web browser
+
 
 ## Abstract domain model
 * Domain specification, concepts
