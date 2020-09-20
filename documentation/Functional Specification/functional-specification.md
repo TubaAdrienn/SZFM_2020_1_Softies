@@ -34,7 +34,9 @@ We want to give a web appearance to the contents stored in newspapers, comics, F
 *   Search engine implementation
 *   Storing favorite jokes
 *   Meme gallery
+
 ## 7. Usage instances
+In this case the only actors on the website are visitors, who do not necessarily tend to be computer literate which means that the website should be easy to operate and navigate. Since the data comes from a WebAPI it means that administrators don't need to manage the website and its database.
 <img src="img/Usage Instances.png"
      alt="Usage Instances UML"
      style="float: left; margin-right: 10px;" />
