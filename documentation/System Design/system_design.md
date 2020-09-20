@@ -1,8 +1,7 @@
 # Simple Joke Site
 
 ## System goals
-One of our goals regarding the system is to keep it 7/24 available for users to access. The design of the portal is going to be responsive in order to make it possible to use our system, not decreasing in quality, on different size of devices' screen. One of the basic features of the system is the ability to react to users' activity. One of those are clicking and typing in order to fulfill the desire of the user. Other features are the ability to switch between menu items, search between categories and filter the data the user is looking for. Retrieving the jokes are going to happen with the usage of an API. For the jokes random generator is going to be coded and then display the generated jokes to the main page.
-
+One of our goals regarding the system is to keep it 7/24 available for users to access. The design of the portal is going to be responsive in order to make it possible to use our system, not decreasing in quality, on different size of devices' screen. One of the basic features of the system is the ability to react to users' activity. One of those are clicking and typing in order to fulfill the desire of the user. Other features are the ability to switch between menu items, search between categories and filter the data the user is looking for. Retrieving the jokes are going to happen with the usage of an API. This API generates the jokes randomly so the website displays randomly generated jokes on the main page.
 
 ## Not system goals
 * Administration of users
@@ -10,13 +9,17 @@ One of our goals regarding the system is to keep it 7/24 available for users to 
 * Enable log in
 * Enable user to post content on the site
 * Displaying animations and videos on the site
+* Subscribing to newsfeed
 * Unavailability
 
 ## Project plan
-* Project roles, responsibilities
-* Project workers and their responsibilities
-* Schedule
-* Milestones
+First and foremost the most important part of working in a group is dividing responsibility and different kind of tasks fairly and evenly. We are aware that we have different kind of strength when it comes to different parts of development so we strive for equality: two people of our group will be responsible for the visual design of our webpage and two people will be in charge of creating the backend code. It doesn't mean total separation, tasks will be discussed thoroughly when questions arise.
+
+Our schedule is already started:
+* We have already discussed the plans and requirement scpecifications beforehand, we cleared up what the aim of the website is. 
+* The next step was to create the function specification where we cleared up the functional details of the website and anything that needed clarification.
+* The current step is creating a system design where further functional and systemic details should be clarified.
+* And the last milestone is the actual programming and testing of the product
 
 ## Business process model
 * Business operators
