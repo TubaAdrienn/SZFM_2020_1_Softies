@@ -138,9 +138,9 @@ Saving the data will use the localStorage gives an oppotunity to save a string w
      alt="Local Storage"/>
 
 ## Implementation design:
-* Presistence classes (dao)
-* Business logic classes (controller)
-* Client-side classes (html/css)
+* Presistence classes (dao.js, util.js)
+* Business logic classes (uicontroller.js, app.js)
+* Client-side classes (html/css - homepage.html, gallery.html, favjokes.html)
 
 ## Test design
 
