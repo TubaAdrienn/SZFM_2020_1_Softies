@@ -55,6 +55,7 @@ Options:
 * Saving favourite jokes locally by clicking a button in the joke's displaying box
 
 ## 11. Function - requirement compliance
+The desire for responsive web design that is drawn up in the requirements specification, so far will be fulfilled by the fact that the project will be created using the Bootstrap framework in addition to the html / css structure, which will ensure the responsive properties. Since we are talking about modern web pages, today’s designs almost require simplicity and clarity.That is what we strive for too, as it is seen in the screen design. The black-and-white-pastel color scheme and the clearly visible, distinctive elements ensure easy navigation on the website. The query of the jokes will be executed by a WebAPI, which can be used for free by anyone, so database management problems are out of scope along the way. This WebAPI allows the developer to filter further the retrieved data and it enables to meet with additional requirements in the future. We strive to create the website in a browser-independent way, so despite the usage of different browsers the portal will look the same in every of them.
 
 ## 12. Glossary
 * [API](https://en.wikipedia.org/wiki/Web_API)
