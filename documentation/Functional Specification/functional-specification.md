@@ -39,8 +39,8 @@ We want to give a web appearance to the contents stored in newspapers, comics, F
 ## 8. Compliance - How the usage instances satisfy the requirements
 
 ## 9. Visual Design
-<img src="img/visual design.png"
-     alt="Visual Design"
+<img src="img/home page.png"
+     alt="Visual design for home page"
      style="float: left; margin-right: 10px;" />
 
 ## 10. Scenarios
