@@ -11,7 +11,14 @@
 * Random generation
 
 
+
 ## Not system goals
+* Administration of users
+* Enable registration
+* Enable log in
+* Enable user to post content on the site
+* Displaying animations and videos on the site
+* Unavailability
 
 ## Project plan
 * Project roles, responsibilities
