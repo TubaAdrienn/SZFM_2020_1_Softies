@@ -22,9 +22,13 @@ Our schedule is already started:
 * And the last milestone is the actual programming and testing of the product
 
 ## Business process model
-* Business operators
-* Business processes
-* Business entities
+    Opening the website results in the home page which gives the visitor the default jokes from any categories and the navigation bar will offer different kind of option to filter the content. 
+
+    * Home: The Home button will navigate us back to the default home page where jokes will be displayed randomly unless a category is chosen. Also on the home page the Joke of the Day will be placed which stays the same all day. This is the main part of the website, this is where you can choose your favourite jokes and save them or just have a good laugh on a rainy day.
+    * Categories: The categories tab will give the opportunity to filter the jokes by chosing one of the possible categories. 
+    * The Gallery will contain pictures of memes that could also entertain the visitors of this website, since nowadays memes seem to be just as popular as written jokes.
+    * The Your Liked Jokes tab will give you the opportunity to take a look at your liked jokes so you can always visit the website again and get back your saved items.
+    * Searchbar: In case you forgot to save a joke or you just look for something particular, there is an option to search for that joke amongst the others by words.
 
 ## Requirements
 * Functional requirements
