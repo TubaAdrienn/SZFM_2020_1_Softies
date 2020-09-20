@@ -20,6 +20,9 @@ We want to give a web appearance to the contents stored in newspapers, comics, F
 *   R02 Responsive web design
 *   R03 Filterability of harmful content
 *   R04 Search engine implementation
+*   R05 Chosing jokes by categories
+*   R06 Storing favourite jokes
+*   R06 Meme gallery - Gallery of pictures of memes
 ## 6. Glossary
 * [API](https://en.wikipedia.org/wiki/Web_API)
 * [Responsive webdesign](https://en.wikipedia.org/wiki/Responsive_web_design)
