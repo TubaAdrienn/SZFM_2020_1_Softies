@@ -43,10 +43,18 @@ We want to give a web appearance to the contents stored in newspapers, comics, F
 
 
 ## 9. Visual Design
+Our website build up of 3 pages, all of them get a visual design plan,which were made in paint. 
+
+First of all, the main page:
 <img src="img/home page.png"
      alt="Visual design for home page"
      style="float: left; margin-right: 10px;" />
-
+Got a clean and simple visual design. And have talkative menu buttons, which makes the website easy to operate. Also have a filtering option, a search bar, and we can search after jokes in several categories with the "categories" drop-down menu.
+Next page is a gallery:
+<img src="img/gallery.png"
+     alt="Visual design for gallery"
+     style="float: left; margin-right: 10px;" />     
+The gallery is even simpler than the home page, here only the pictures are located, and the menu buttons for switching between pages.
 ## 10. Scenarios
 Opening the website should result in the main screen displaying which should contain the tabs to choose from the categories and the place to display the jokes. On default it should display random jokes. On one side the Joke of the Day should take place, which should not change while navigating on the website.
 Options:
