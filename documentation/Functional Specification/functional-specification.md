@@ -34,13 +34,21 @@ We want to give a web appearance to the contents stored in newspapers, comics, F
 *   Search engine implementation
 *   Storing favorite jokes
 *   Meme gallery
+
 ## 7. Usage instances
+In this case the only actors on the website are visitors, who do not necessarily tend to be computer literate which means that the website should be easy to operate and navigate. Since the data comes from a WebAPI it means that administrators don't need to manage the website and its database.
 <img src="img/Usage Instances.png"
      alt="Usage Instances UML"
      style="float: left; margin-right: 10px;" />
 
 ## 8. Compliance - How the usage instances satisfy the requirements
-
+* Main page: After enter the webpage URL, the items displayed on the main screen in the browser are easy to use due to the clean visual design. Due to the responsive web design, the home page also provides easy transparency from tablet or phone.
+* Categories: In the header, it is possible to switch between categories by selecting the Category button, and this will display various jokes on the home page screen.
+* Like Button: The Like button allows you to save your favorite jokes to local storage, which can be seen again later when the web page is reopened.
+* Search Bar implementation allows you to search for jokes by words
+* Next to the Search bar, there is a checkbox, which you can filter the jokes based on their offensive nature
+* Gallery button is available by pressing meme gallery
+* Press the filter button to avoid nsfw content
 
 ## 9. Visual Design
 Our website build up of 3 pages, all of them get a visual design plan,which were made in paint. 
