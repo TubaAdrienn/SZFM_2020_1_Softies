@@ -11,6 +11,7 @@ The system goal is to provide a website that display jokes that belong to differ
 * Displaying animations, videos 
 * Sending own jokes
 * Saving jokes to a MySQL database
+* Unavailability
 
 ## 3. Current situation description
 We are a cheerful organization of young web developers, with a goal in mind to put a smile on the faces of as many people as possible with our projects. In our rushing modern world people tend to get lost in their boring everyday life, so we want to make our visitors' everydays a little brighter. At the moment, no one of our acquaintances have a favorite joke site, and jokes only go the round. 
@@ -53,8 +54,11 @@ Options:
 * Choosing the category results in only displaying the jokes that belong in that category
 * A button should be displayed that controls whether the website displays the NSFW content or not
 * Saving favourite jokes locally by clicking a button in the joke's displaying box
+* By clicking on the "about us" menu item the user will be redirected to a page full of memes
+* By clicking on the "your liked jokes" menu item the user will be redirected to a page filled with the jokes the user saved with clicking the box in the corner of the joke
 
 ## 11. Function - requirement compliance
+The desire for responsive web design that is drawn up in the requirements specification, so far will be fulfilled by the fact that the project will be created using the Bootstrap framework in addition to the html / css structure, which will ensure the responsive properties. Since we are talking about modern web pages, today’s designs almost require simplicity and clarity.That is what we strive for too, as it is seen in the screen design. The black-and-white-pastel color scheme and the clearly visible, distinctive elements ensure easy navigation on the website. The query of the jokes will be executed by a WebAPI, which can be used for free by anyone, so database management problems are out of scope along the way. This WebAPI allows the developer to filter further the retrieved data and it enables to meet with additional requirements in the future. We strive to create the website in a browser-independent way, so despite the usage of different browsers the portal will look the same in every of them.
 
 ## 12. Glossary
 * [API](https://en.wikipedia.org/wiki/Web_API)
