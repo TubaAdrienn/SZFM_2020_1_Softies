@@ -15,6 +15,12 @@ One of our goals regarding the system is to keep it 7/24 available for users to 
 ## Project plan
 First and foremost the most important part of working in a group is dividing responsibility and different kind of tasks fairly and evenly. We are aware that we have different kind of strength when it comes to different parts of development so we strive for equality: two people of our group will be responsible for the visual design of our webpage and two people will be in charge of creating the backend code. It doesn't mean total separation, tasks will be discussed thoroughly when questions arise.
 
+Positions:
+ * Anna Egyed - Backend (JavaScript)
+ * Adrienn Tuba - Backend (JavaScript)
+ * Csaba Szilágyi - Frontend (HTML/CSS)
+ * Mátyás Fenyvesi - Frontend (HTML/CSS)
+ 
 Our schedule is already started:
 * We have already discussed the plans and requirement scpecifications beforehand, we cleared up what the aim of the website is. 
 * The next step was to create the function specification where we cleared up the functional details of the website and anything that needed clarification.
