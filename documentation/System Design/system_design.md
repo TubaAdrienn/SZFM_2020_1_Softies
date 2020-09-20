@@ -1,6 +1,15 @@
 # Simple Joke Site
 
 ## System goals
+* Responsive web-design
+* Ability to switch between menu points
+* Ability to react to users' activity
+* Ability to search between data
+* Ability to filter data
+* Ability to store data
+* Ability to display stored data
+* Random generation
+
 
 ## Not system goals
 
