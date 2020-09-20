@@ -62,8 +62,10 @@ In the menu bar, the menu items are buttons with the ability to redirect the use
 
 Filter box:
 * Ticking this box makes possible for the user to filter the content depending on the audience (child/adult).
+
 Search bar:
 * The user is able to type here the content he is looking for.
+
 More button:
 * Clicking this button the user is able to generate more jokes to the main page.
 
