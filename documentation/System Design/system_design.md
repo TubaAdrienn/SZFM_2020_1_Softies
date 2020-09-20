@@ -144,6 +144,7 @@ Saving the data will use the localStorage gives an oppotunity to save a string w
 
 ## 12. Test design
 
+
 ## 13. Installation design
 * Have an electrical device that is functional and capable of accessing the Internet (mobile, PC, etc..)
 * If don't have an operating system, then need to install any of them. (Windows, Ubuntu, etc..)
