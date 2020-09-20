@@ -1,6 +1,7 @@
 # Simple Joke Site
 
 ## System goals
+* 7/24 availability
 * Responsive web-design
 * Ability to switch between menu points
 * Ability to react to users' activity
@@ -9,7 +10,7 @@
 * Ability to store data
 * Ability to display stored data
 * Random generation
-
+* Retrieve data using API
 
 
 ## Not system goals
