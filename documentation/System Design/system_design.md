@@ -97,11 +97,21 @@ Gallery page:
 * Abstract components and their relationship
 
 ## Architectural design
-* Architectural design pattern
-* Layers of the application, main components and their relationship
-* Change handling
-* System expandability
-* Security functions
+**Main Components of the design**
+
+**Front End**
+* Web Browser
+* Mobile Browser
+* The User Interface, the visual design will take place at this front
+
+**Middle**
+* Application server
+* Web server
+
+**Back End**
+* REST API
+
+The Website will follow the client-server model which means that different kind of clients can run at the same time and the server will be able to process their requests. It requires Internet access.
 
 ## Database design
 This application doesn't use MySQL or anything that could be considered traditional database. It retrieves its data from a WebAPI and works with its content and saves the liked jokes to a local storage that is a readonly property of the document, in this case browser, visitors open the webpage. So everyone can save in and read from it locally without maintaining a database.
