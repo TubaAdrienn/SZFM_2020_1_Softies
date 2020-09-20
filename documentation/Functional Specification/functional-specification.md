@@ -55,6 +55,10 @@ Next page is a gallery:
      alt="Visual design for gallery"
      style="float: left; margin-right: 10px;" />     
 The gallery is even simpler than the home page, here only the pictures are located, and the menu buttons for switching between pages.
+Last but not least we have a visual design for the "your liked jokes" page:
+<img src="img/your liked jokes.png"
+     alt="Visual design for your liked jokes page"
+     style="float: left; margin-right: 10px;" />     
 ## 10. Scenarios
 Opening the website should result in the main screen displaying which should contain the tabs to choose from the categories and the place to display the jokes. On default it should display random jokes. On one side the Joke of the Day should take place, which should not change while navigating on the website.
 Options:
