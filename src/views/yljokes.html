@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Softies Joke Website</title>
 	<link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="#">Joke Website</a>
@@ -28,6 +30,42 @@
             </ul>
         </div>
     </nav>
+
+	<div style="text-align: center; margin-top:30px;">
+        <h1>Your Liked Jokes</h1>
+    </div>
+
+    <div class="jokes" style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+        <div class="card border-primary mb-3" style="width: 600px; margin-top: 30px;">
+            <div class="card-header" style="display: flex;">Joke
+                <label class="form-check-label" style="margin-left:25px; ">
+                    <input class="form-check-input" type="checkbox" value="">
+                    Like
+                </label>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+        </div>
+
+        <div class="card border-primary mb-3" style="width: 600px; margin-top:30px">
+            <div class="card-header" style="display: flex;">Joke
+                <label class="form-check-label" style="margin-left:25px;">
+                    <input class="form-check-input" type="checkbox" value="">
+                    Like
+                </label>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+        </div>
+    </div>
+
 	<script src="../dao/dao.js"></script>
+
+	<footer class="footer" style=" position: fixed; left: 0; bottom: 0; width: 100%; font-size: 10px;">
+        Joke Website &copy</footer>
 </body>
 </html>
