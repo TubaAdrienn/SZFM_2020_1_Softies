@@ -96,5 +96,15 @@ class UI {
 
     }
 
+    setMemeOfTheDay(img) {
+        const imgCont = document.querySelector('.img-container');
+        let newImg = document.createElement('img');
+        newImg.setAttribute('src', img);
+        newImg.style = "width: 220px; display: block; margin-left: auto; margin-right: auto; margin-top:35px;"
+        newImg.alt = "meme";
+        imgCont.appendChild(newImg);
+
+    }
+
 
 }
