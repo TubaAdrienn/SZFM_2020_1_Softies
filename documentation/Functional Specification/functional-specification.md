@@ -11,7 +11,6 @@ The system goal is to provide a website that display jokes that belong to differ
 * Displaying animations, videos 
 * Sending own jokes
 * Saving jokes to a MySQL database
-* Unavailability
 
 ## 3. Current situation description
 We are a cheerful organization of young web developers, with a goal in mind to put a smile on the faces of as many people as possible with our projects. In our rushing modern world people tend to get lost in their boring everyday life, so we want to make our visitors' everydays a little brighter. At the moment, no one of our acquaintances have a favorite joke site, and jokes only go the round. 
@@ -27,13 +26,13 @@ We want to give a web appearance to the contents stored in newspapers, comics, F
 * The display of the website should be compatible with as many devices as possible. → Responsive display 
 
 ## 6. List of requirements
-*   Easy to operate
-*   Responsive web design
-*   Filtering jokes by categories
-*   Filterability of harmful content
-*   Search engine implementation
-*   Storing favorite jokes
-*   Meme gallery
+*  R01 Easy to operate
+*  R02 Responsive web design
+*  R03 Filtering jokes by categories
+*  R04 Filterability of harmful content
+*  R05 Search engine implementation
+*  R06 Storing favorite jokes
+*  R07 Meme gallery
 
 ## 7. Usage instances
 In this case the only actors on the website are visitors, who do not necessarily tend to be computer literate which means that the website should be easy to operate and navigate. Since the data comes from a WebAPI it means that administrators don't need to manage the website and its database.

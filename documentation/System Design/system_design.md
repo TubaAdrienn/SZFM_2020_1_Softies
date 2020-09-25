@@ -36,13 +36,13 @@ Our schedule is already started:
 * Searchbar: In case you forgot to save a joke or you just look for something particular, there is an option to search for that joke amongst the others by words.
 
 ## 5. Requirements
-* Easy to operate
-* Responsive web design
-* Filterability of harmful content
-* Search engine implementation
-* Chosing jokes by categories
-* Ability to store favourite jokes
-* Gallery of memes with funny pictures created in .jpeg or .png
+* R01 Easy to operate
+* R02 Responsive web design
+* R03 Filterability of harmful content
+* R04 Search engine implementation
+* R05 Chosing jokes by categories
+* R06 Ability to store favourite jokes
+* R07 Gallery of memes with funny pictures created in .jpeg or .png
 
 ## 6. Functional design
 Main Page:
@@ -56,24 +56,24 @@ Main Page:
 
 Menu bar:
 In the menu bar, the menu items are buttons with the ability to redirect the user to another pages.
-* Category button: Clicking this button the user will open a drop-down menu of categories he could chose from.
+* Category button: Clicking this button the user will open a drop-down menu of categories the user could chose from.
 * Gallery button: Clicking this button the user will be redirected to a page filled with meme pictures.
 * Your liked jokes button: Clicking this button the user will be redirected to a page filled with his  favorite jokes.The jokes are saved here after the user tick the little boxes signed by the text "like".
 
 Filter box:
-* Ticking this box makes possible for the user to filter the content depending on the audience (child/adult).
+* Ticking this box makes possible for the users to filter the content depending on the audience (child/adult).
 
 Search bar:
-* The user is able to type here the content he is looking for.
+* The users are able to type here the content what they are looking for.
 
 More button:
 * Clicking this button the user is able to generate more jokes to the main page.
 
 Your liked jokes page:
-* Here the user finds the jokes he liked before. The user is able to rewind the jokes he liked and with the More button he is able to load more jokes. The user is able to go back to the main page or visit the gallery to look for memes.
+* Here the user find the jokes which personally liked before. The users are able to rewind the jokes which they liked and with the "More" button they are able to load more jokes. The users are able to go back to the main page or visit the gallery to look for memes.
 
 Gallery page:
-* Here the user finds famous memes. Using the More button he is able to load more memes. The user is able to go back to the main page or visit the jokes he liked.
+* Here the users find famous memes. Using the "More" button they are able to load more memes. They are able to go back to the main page or visit the personally liked jokes.
 
 ## 7. Physical environment
 
