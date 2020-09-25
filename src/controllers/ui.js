@@ -23,3 +23,21 @@
 //setMemeOfTheDay(img) -> get the img container, create a new img element, set the attributes, style: width: 220px; display: block; margin-left: auto; margin-right: auto; margin-top:35px;, then append it
 
 //setGalleryPictures(src) -> do the same just with an array
+
+class UI {
+
+    constructor() { }
+
+    displayCategs(categories) {
+
+        const drmenu = document.querySelector('.dropdown-menu');
+
+        categories.forEach(cats => {
+            let newItem = document.createElement('a');
+            newItem.className = 'dropdown-item';
+            newItem.setAttribute = ("href", "#");
+            newItem.textContent = cats;
+            drmenu.appendChild(newItem);
+        });
+    }
+}
