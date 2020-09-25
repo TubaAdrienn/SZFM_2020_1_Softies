@@ -40,4 +40,20 @@ class UI {
             drmenu.appendChild(newItem);
         });
     }
+
+    clearCards() {
+        document.getElementById("joke-container").innerHTML = "";
+    }
+
+    removeLoading(){
+        document.getElementById('loading').remove();
+    }
+
+    addHeader(category) {
+        let header = document.createElement('h2');
+        header.textContent = category;
+        header.style = "margin-top: 15px; margin-bottom: 40px;";
+        document.getElementById("joke-container").appendChild(header);
+    }
+
 }
