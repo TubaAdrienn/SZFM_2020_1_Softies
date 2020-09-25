@@ -106,5 +106,19 @@ class UI {
 
     }
 
+    setGalleryPictures(src) {
+
+        const imgCont = document.querySelector('.img-container');
+
+        src.forEach(line => {
+            let newImg = document.createElement('img');
+            newImg.setAttribute('src', line);
+            newImg.style = "margin-right: 10px; margin-left: 10px; width: 400px; margin-bottom: 30px"
+            newImg.alt = "meme";
+            imgCont.appendChild(newImg);
+        });
+    }
+
+
 
 }
