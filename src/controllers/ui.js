@@ -56,4 +56,45 @@ class UI {
         document.getElementById("joke-container").appendChild(header);
     }
 
+    createJokeCards(width, joke, id, addbutton, liked=true) {
+        //Get joke container
+        const cont = document.getElementById("joke-container");
+        const button = document.querySelector('.btn-more')
+
+        //CreateElements
+        let newDiv = document.createElement('div');
+        let newDivHead = document.createElement('div');
+        let newLabel = document.createElement('label');
+        let newInput = document.createElement('input');
+        let newCardBody = document.createElement('div');
+        let newPhar = document.createElement('p');
+
+        //Set card-body
+        newPhar.textContent = joke;
+        newPhar.id = `${id}-phar`;
+        newCardBody.appendChild(newPhar);
+        newCardBody.className = "card-body";
+
+        //Set label and input
+        newInput.className = "form-check-input like-box";
+        newInput.type = "checkbox";
+        newInput.id = id;
+        if(liked) newInput.checked=true;
+        newLabel.className = "form-check-label";
+        newLabel.style = "margin-left:25px;";
+        newLabel.appendChild(newInput);
+
+        //Set divs
+        newDivHead.className = "card-header";
+        newDivHead.style = "display: flex;";
+        newDivHead.textContent = "Like";
+        newDivHead.appendChild(newLabel);
+        newDiv.className = "card border-primary mb-3";
+        newDiv.style = `width:${width};`
+        newDiv.appendChild(newDivHead);
+        newDiv.appendChild(newCardBody);
+
+    }
+
+
 }
