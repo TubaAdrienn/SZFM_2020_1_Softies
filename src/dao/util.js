@@ -1,5 +1,3 @@
-//Util class:
-//static checkJokeParts - if joke.type==twopart put it together and return
 class Util{
     static checkJokeParts(joke){
         if(joke.type=="twopart"){
@@ -19,4 +17,3 @@ class Util{
         return ((date.getDay()+1)*dateDay)/2;
     }
 }
-//static memeOfTheDayGenerator - Generate a number based on the date
