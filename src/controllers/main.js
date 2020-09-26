@@ -1,3 +1,8 @@
+let moreButtn = document.querySelector('.btn-more');
+const get = new GetJokes();
+const ui = new UI();
+let category = "Any";
+let flags = "&blacklistFlags=nsfw,racist,sexist"
 
 
 //Add Button Listener function
@@ -31,3 +36,22 @@ function addLikeListener() {
         });
     })
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    get.getCategories().then((resp) => ui.displayCategs(resp.categories.categories));
+    get.getJokes(category, 3, flags).then((resp) => {
+        console.log(resp);
+        var keys = Object.keys(localStorage);
+        let liked;
+        //ui.removeLoading();
+        resp.jokes.jokes.forEach(joke => {
+            liked = keys.includes(joke.id.toString());
+            let jokeToDisplay = Util.checkJokeParts(joke);
+            ui.createJokeCards("70vw", jokeToDisplay, joke.id, true, liked);
+        });
+        addLikeListener();
+    });
+});
+
+
+

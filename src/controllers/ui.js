@@ -68,6 +68,8 @@ class UI {
         newDiv.appendChild(newDivHead);
         newDiv.appendChild(newCardBody);
 
+        cont.appendChild(newDiv);
+
     }
 
     setMemeOfTheDay(img) {
