@@ -45,3 +45,5 @@ Browser name:
     * Dao get jokes test
     * Expected: Response with a joke
     * Result: True or false
+
+Tested by: Tester Name, Date
