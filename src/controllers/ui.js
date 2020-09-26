@@ -33,7 +33,8 @@ class UI {
     createJokeCards(width, joke, id, addbutton, liked=true) {
         //Get joke container
         const cont = document.getElementById("joke-container");
-        const button = document.querySelector('.btn-more')
+        const button = document.querySelector('.btn-more');
+        if (button != null) cont.removeChild(button);
 
         //CreateElements
         let newDiv = document.createElement('div');
@@ -69,6 +70,17 @@ class UI {
         newDiv.appendChild(newCardBody);
 
         cont.appendChild(newDiv);
+
+        if (addbutton) {
+            if (button != null) cont.appendChild(button);
+            else {
+                let button = document.createElement("button");
+                button.type = "button";
+                button.className = "btn btn-primary btn-more"
+                button.textContent = "MORE";
+                cont.appendChild(button);
+            }
+        }
 
     }
 
