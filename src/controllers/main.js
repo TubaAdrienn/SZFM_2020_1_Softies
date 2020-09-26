@@ -29,9 +29,8 @@ function addLikeListener() {
         item.addEventListener('click', (e) => {
             let id = e.target.id;
             if (e.target.checked) {
-                console.log(e.target.checked)
                 get.saveJokesToLocalStorage(id, document.getElementById(`${id}-phar`).textContent);
-            } else{
+            } else {
                 get.removeFromLocalStorage(id)
             }
         });
@@ -66,11 +65,20 @@ document.querySelector('.drop-cats').addEventListener('click', function (e) {
         resp.jokes.jokes.forEach(joke => {
             liked = keys.includes(joke.id.toString());
             let jokeToDisplay = Util.checkJokeParts(joke);
-            ui.createJokeCards("70vw", jokeToDisplay, joke.id,true,liked);
+            ui.createJokeCards("70vw", jokeToDisplay, joke.id, true, liked);
         });
-      //  addButtonListener();
+        //  addButtonListener();
         addLikeListener();
     });
 });
 
+//Listening to filter button
+document.querySelector('.filter-btn').addEventListener('click', function (e) {
+    if (!e.target.checked) {
+        flags = "";
+    }
+    else {
+        flags = "blacklistFlags=nsfw,racist,sexist";
+    }
+});
 
