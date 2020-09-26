@@ -1,6 +1,6 @@
 # SZFM_2020_1_Softies
 
-This repository contains a simple web portal displaying jokes. The portal is created by using HTML, CSS and JavaScript. It will display different kind of jokes depending on the users' chosen categories. The site keeps the users up-to-date with the most liked joke of the day and their jokes of preference.
+This repository contains a simple web portal displaying jokes. The portal is created by using HTML, CSS and JavaScript. It will display different kind of jokes depending on the users' chosen categories. The site keeps the users up-to-date with the meme of the day and saves liked jokes for later.
 
 ## Team: Sofities  :mortar_board:
 
