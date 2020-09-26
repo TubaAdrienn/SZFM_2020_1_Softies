@@ -88,6 +88,7 @@ class UI {
         const imgCont = document.querySelector('.img-container');
         let newImg = document.createElement('img');
         newImg.setAttribute('src', img);
+        newImg.id= img.slice(13);
         newImg.style = "width: 220px; display: block; margin-bottom:20px; margin-left: auto; margin-right: auto; margin-top:20px;"
         newImg.alt = "meme";
         newImg.className= "open-modal";
@@ -104,6 +105,7 @@ class UI {
         src.forEach(line => {
             let newImg = document.createElement('img');
             newImg.setAttribute('src', line);
+            newImg.id= img.slice(13);
             newImg.style = "margin-right: 10px; margin-left: 10px; width: 400px; margin-bottom: 30px"
             newImg.alt = "meme";
             newImg.className= "open-modal";
@@ -114,6 +116,7 @@ class UI {
     }
 
     setModalData(src) {
+        console.log(src);
         const modal=document.querySelector(".modal-body");
         modal.innerHTML="";
         const modalDiv=document.createElement("div");

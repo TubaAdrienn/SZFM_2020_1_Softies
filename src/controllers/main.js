@@ -45,8 +45,7 @@ function addLikeListener() {
 function addImgListener() {
     imgCont.addEventListener('click', function (e) {
         if (e.target.classList.contains("open-modal")) {
-            let src = e.target.src.slice(32);
-            ui.setModalData(src);
+            ui.setModalData(e.target.id);
         }
     });
 }
@@ -73,6 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 });
 
+//Listening to categories
 document.querySelector('.drop-cats').addEventListener('click', function (e) {
     category = e.target.textContent;
     ui.clearCards();
