@@ -52,6 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ui.createJokeCards("70vw", jokeToDisplay, joke.id, true, liked);
         });
         addLikeListener();
+        addButtonListener();
     });
 
     //Loading pictures to be implemented
@@ -69,7 +70,7 @@ document.querySelector('.drop-cats').addEventListener('click', function (e) {
             let jokeToDisplay = Util.checkJokeParts(joke);
             ui.createJokeCards("70vw", jokeToDisplay, joke.id, true, liked);
         });
-        //  addButtonListener();
+        addButtonListener();
         addLikeListener();
     });
 });
