@@ -90,6 +90,9 @@ class UI {
         newImg.setAttribute('src', img);
         newImg.style = "width: 220px; display: block; margin-left: auto; margin-right: auto; margin-top:35px;"
         newImg.alt = "meme";
+        newImg.className= "open-modal";
+        newImg.setAttribute("data-toggle","modal")
+        newImg.setAttribute("data-target", "#meme-modal");
         imgCont.appendChild(newImg);
 
     }
@@ -103,10 +106,25 @@ class UI {
             newImg.setAttribute('src', line);
             newImg.style = "margin-right: 10px; margin-left: 10px; width: 400px; margin-bottom: 30px"
             newImg.alt = "meme";
+            newImg.className= "open-modal";
+            newImg.setAttribute("data-toggle","modal")
+            newImg.setAttribute("data-target", "#meme-modal");
             imgCont.appendChild(newImg);
         });
     }
 
+    setModalData(src) {
+        const modal=document.querySelector(".modal-body");
+        modal.innerHTML="";
+        const modalDiv=document.createElement("div");
+        const newImg=document.createElement("img");
+        newImg.setAttribute('src', `../resources/${src}`);
+        newImg.alt = "meme";
+        newImg.style="width: 50vw; height: 80vh;"
 
+        console.log(newImg.src);
+        modalDiv.appendChild(newImg);
+        modal.appendChild(modalDiv);
+    }
 
 }
