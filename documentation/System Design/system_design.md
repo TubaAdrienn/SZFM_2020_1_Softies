@@ -27,30 +27,31 @@ Our schedule is already started:
 * The current step is creating a system design where further functional and systemic details should be clarified.
 * And the last milestone is the actual programming and testing of the product.
 
-1) 2020. 09. 07. - 2020. 09. 13.
-		2020. 09. 07. - Meeting with the customer and discussing the specifications and the requirements of the system.
-		2020. 09. 11. - I. Team meeting discussing the new system order.
-		2020. 09. 13. - Deadline of requirement specification.
+
+ 1) 2020. 09. 07. - 2020. 09. 13.
+     2020. 09. 07.  - Meeting with the customer and discussiong the specifications and the requirements of the system.
+     2020. 09. 11.  - I. Team meeting discussing the new system order.
+     2020. 09. 13.  - Deadline of requirement specification.
 
 2) 2020. 09. 14. - 2020. 09. 20.
-		2020. 09. 14. - Meeting with the customer to clarify the requirement specification.
-		2020. 09. 15. - II. Team meeting regarding the functionality of the system.
-                     - Start working on the functional specification of the system.
-		2020. 09. 18. - Planning system design.
-		2020. 09. 20. - Deadline of functional specification.
-              		  - Dealine of system design.
-              		  - III. Team meeting: discussing the process so far and the next moves.
+     2020. 09. 14.  - Meeting with the customer to clarify the requirement specification.
+     2020. 09. 15.  - II. Team meeting regarding the functionality of the system.
+                    - Start working on the functional specification of the system.
+     2020. 09. 18.  - Planning system design.
+     2020. 09. 20.  - Deadline of functional specification.
+                    - Dealine of system design.
+                    - III. Team meeting: discussing the process so far and the next moves.
 
 3) 2020. 09. 21. - 2020. 09. 27.
-		2020. 09. 21. - Meeting with the customer. Clarify functional specification and system design.
-		2020. 09. 23. - Writing the basic skeleton of the system.
-			          - IV. Team meeting: Discussion of the frontend of the system.
-		2020. 09. 24. - Deadline of the frontend implementation.
-		2020. 09. 25. - V. Team meeting: Discussion of the backend of the system.
-			          - Start implementing the backend of the system.
-		2020. 09. 26. - Deadline of the backend implementation.
-			          - Create testing protocol.
-		2020. 09. 28. - Deadline of the system testing. Oversee the whole project.
+     2020. 09. 21.  - Meeting with the customer. Clarify functional specification and system design.
+     2020. 09. 23.  - Writing the basic skeleton of the system.
+                    - IV. Team meeting: Discussion of the frontend of the system.
+     2020. 09. 24.  - Deadline of the frontend implementation.
+     2020. 09. 25.  - V. Team meeting: Discussion of the backend of the system.
+                    - Start implementing the backend of the system.
+     2020. 09. 26.  - Deadline of the backend implementation.
+                    - Create testing protocol.
+     2020. 09. 28.  - Deadline of the system testing. Oversee the whole project.
 
 4) 2020. 09. 28. Meeting with the customer and hand over the system.
 
