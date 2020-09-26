@@ -8,8 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ui.createJokeCards("80vw", jokes.values[i], jokes.keysToSend[i], false, true);
     }
     addLikeListener();
-
-})
+});
 
 function addLikeListener() {
     document.querySelectorAll('.like-box').forEach(item => {
