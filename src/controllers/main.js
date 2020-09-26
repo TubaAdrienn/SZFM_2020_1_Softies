@@ -1,6 +1,7 @@
-let moreButtn = document.querySelector('.btn-more');
 const get = new GetJokes();
 const ui = new UI();
+
+let moreButtn = document.querySelector('.btn-more');
 let category = "Any";
 let flags = "&blacklistFlags=nsfw,racist,sexist"
 
@@ -37,10 +38,10 @@ function addLikeListener() {
     })
 }
 
+//Loading the categories, jokes, and pictures
 document.addEventListener('DOMContentLoaded', () => {
     get.getCategories().then((resp) => ui.displayCategs(resp.categories.categories));
     get.getJokes(category, 3, flags).then((resp) => {
-        console.log(resp);
         var keys = Object.keys(localStorage);
         let liked;
         //ui.removeLoading();
@@ -51,7 +52,25 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         addLikeListener();
     });
+
+    //Loading pictures to be implemented
 });
 
+document.querySelector('.drop-cats').addEventListener('click', function (e) {
+    category = e.target.textContent;
+    ui.clearCards();
+    ui.addHeader(e.target.textContent);
+    var keys = Object.keys(localStorage);
+    let liked;
+    get.getJokes(category, 3, flags).then((resp) => {
+        resp.jokes.jokes.forEach(joke => {
+            liked = keys.includes(joke.id.toString());
+            let jokeToDisplay = Util.checkJokeParts(joke);
+            ui.createJokeCards("70vw", jokeToDisplay, joke.id,true,liked);
+        });
+      //  addButtonListener();
+        addLikeListener();
+    });
+});
 
 
