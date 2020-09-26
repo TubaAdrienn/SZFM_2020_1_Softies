@@ -2,7 +2,9 @@ const get = new GetJokes();
 const ui = new UI();
 const search = document.querySelector('.search-btn');
 const searchBar = document.querySelector('.search-bar');
+const imgCont = document.querySelector('.img-container');
 
+let jokeID = Util.memeOfTheDayGenerator();
 let moreButtn = document.querySelector('.btn-more');
 let category = "Any";
 let flags = "&blacklistFlags=nsfw,racist,sexist"
@@ -39,6 +41,16 @@ function addLikeListener() {
     })
 }
 
+//To create modal
+function addImgListener() {
+    imgCont.addEventListener('click', function (e) {
+        if (e.target.classList.contains("open-modal")) {
+            let src = e.target.src.slice(32);
+            ui.setModalData(src);
+        }
+    });
+}
+
 //Loading the categories, jokes, and pictures
 document.addEventListener('DOMContentLoaded', () => {
     get.getCategories().then((resp) => ui.displayCategs(resp.categories.categories));
@@ -54,8 +66,11 @@ document.addEventListener('DOMContentLoaded', () => {
         addLikeListener();
         addButtonListener();
     });
-
-    //Loading pictures to be implemented
+    get.fetchImgsSrc().then(resp => {
+        let lines = resp.lines.split('\n');
+        ui.setMemeOfTheDay(lines[jokeID]);
+        addImgListener();
+    })
 });
 
 document.querySelector('.drop-cats').addEventListener('click', function (e) {
@@ -94,7 +109,6 @@ search.addEventListener('click', function (e) {
         var keys = Object.keys(localStorage);
         let liked;
         get.getJokesBySearch(searchBar.value).then((resp) => {
-            console.log(resp);
             resp.jokes.jokes.forEach(joke => {
                 liked = keys.includes(joke.id.toString());
                 let jokeToDisplay = Util.checkJokeParts(joke);
