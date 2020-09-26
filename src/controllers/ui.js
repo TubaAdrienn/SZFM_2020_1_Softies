@@ -105,7 +105,7 @@ class UI {
         src.forEach(line => {
             let newImg = document.createElement('img');
             newImg.setAttribute('src', line);
-            newImg.id= img.slice(13);
+            newImg.id= src.slice(13);
             newImg.style = "margin-right: 10px; margin-left: 10px; width: 400px; margin-bottom: 30px"
             newImg.alt = "meme";
             newImg.className= "open-modal";
