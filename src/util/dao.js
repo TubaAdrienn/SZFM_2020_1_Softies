@@ -36,9 +36,8 @@ class GetJokes {
         }
     }
 
-    //Amount and flags dont work properly
     async getJokesBySearch(word) {
-        const response = await fetch(`https://jokeapi-v2.p.rapidapi.com/joke/Any?contains=${word}&format=json&amount=5`, {
+        const response = await fetch(`https://jokeapi-v2.p.rapidapi.com/joke/Any?contains=${word}&format=json&amount=3`, {
             "method": "GET",
             "headers": {
                 "x-rapidapi-host": "jokeapi-v2.p.rapidapi.com",

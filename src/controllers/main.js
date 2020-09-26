@@ -1,5 +1,7 @@
 const get = new GetJokes();
 const ui = new UI();
+const search = document.querySelector('.search-btn');
+const searchBar = document.querySelector('.search-bar');
 
 let moreButtn = document.querySelector('.btn-more');
 let category = "Any";
@@ -82,3 +84,21 @@ document.querySelector('.filter-btn').addEventListener('click', function (e) {
     }
 });
 
+//Listening to searchbar
+search.addEventListener('click', function (e) {
+    e.preventDefault();
+    if (searchBar.value != "") {
+        ui.clearCards();
+        ui.addHeader("Search");
+        var keys = Object.keys(localStorage);
+        let liked;
+        get.getJokesBySearch(searchBar.value).then((resp) => {
+            console.log(resp);
+            resp.jokes.jokes.forEach(joke => {
+                liked = keys.includes(joke.id.toString());
+                let jokeToDisplay = Util.checkJokeParts(joke);
+                ui.createJokeCards("70vw", jokeToDisplay, joke.id, false, liked);
+            });
+        })
+    }
+});
