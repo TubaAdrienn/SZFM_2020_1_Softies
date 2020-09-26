@@ -4,10 +4,15 @@ var ui = new UI();
 
 document.addEventListener('DOMContentLoaded', () => {
     var jokes = get.getFromLocalStorage();
-    for (let i = 0; i < jokes.values.length; i++) {
-        ui.createJokeCards("80vw", jokes.values[i], jokes.keysToSend[i], false, true);
+    if(jokes.values.length>0){
+        for (let i = 0; i < jokes.values.length; i++) {
+            ui.createJokeCards("80vw", jokes.values[i], jokes.keysToSend[i], false, true);
+        }
+        addLikeListener();
+    } else{
+        ui.noContentYet("You haven't liked any jokes yet.");
     }
-    addLikeListener();
+  
 });
 
 function addLikeListener() {

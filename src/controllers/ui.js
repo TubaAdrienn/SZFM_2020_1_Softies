@@ -127,4 +127,13 @@ class UI {
         modal.appendChild(modalDiv);
     }
 
+    noContentYet(msg){
+        console.log("yey");
+        const imgCont = document.querySelector('#joke-container');
+        let msgPlace=document.createElement("h3");
+        msgPlace.textContent=msg;
+        imgCont.appendChild(msgPlace);
+        console.log("yey");
+    }
+
 }
