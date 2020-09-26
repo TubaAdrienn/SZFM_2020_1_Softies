@@ -122,7 +122,7 @@ class UI {
         const newImg=document.createElement("img");
         newImg.setAttribute('src', `../resources/${src}`);
         newImg.alt = "meme";
-        newImg.style="width: 50vw; height: 80vh;"
+        newImg.style="max-width: 70vw; max-height: 70vh;"
         modalDiv.appendChild(newImg);
         modal.appendChild(modalDiv);
     }
