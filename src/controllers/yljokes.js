@@ -18,9 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function addLikeListener() {
     document.querySelectorAll('.like-box').forEach(item => {
         item.addEventListener('click', (e) => {
-            console.log('clickity');
             let id = e.target.id;
-            console.log(id);
             get.removeFromLocalStorage(id)
         });
     })

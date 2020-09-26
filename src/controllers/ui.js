@@ -116,7 +116,6 @@ class UI {
     }
 
     setModalData(src) {
-        console.log(src);
         const modal=document.querySelector(".modal-body");
         modal.innerHTML="";
         const modalDiv=document.createElement("div");
