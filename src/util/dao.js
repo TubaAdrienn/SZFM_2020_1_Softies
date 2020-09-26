@@ -53,7 +53,7 @@ class GetJokes {
     }
 
     async fetchImgsSrc() {
-        const response = await fetch("../src/imgsrc.txt");
+        const response = await fetch("../resources/imgsrc.txt");
         const lines = await response.text()
 
         return {
