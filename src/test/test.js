@@ -42,8 +42,8 @@ getter.saveJokesToLocalStorage('id', 'string');
 getter.saveJokesToLocalStorage('id2', 'string2');
 
 var lStr = getter.getFromLocalStorage();
-console.log(lStr.keysToSend[0]=='id2')
-console.log(lStr.keysToSend[1]=='id')
+console.log(lStr.keysToSend.includes('id2'))
+console.log(lStr.keysToSend.includes('id'))
 console.log(Object.keys(localStorage).length==lStrLength+2);
 
 getter.removeFromLocalStorage('id');
