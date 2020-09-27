@@ -14,7 +14,6 @@ function addImgListener() {
     imgCont.addEventListener('click', function (e) {
         if (e.target.classList.contains("open-modal")) {
             let src = e.target.id;
-            console.log(src);
             ui.setModalData(src);
         }
     });

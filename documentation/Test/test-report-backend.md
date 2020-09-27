@@ -48,7 +48,7 @@
 Tests can be found in the the test folder.
 Tested By: Adrienn Tuba, 2020.09.27.
 
-### Controller testing: yljokes.js
+### Controller testing: yljokes.js, gallery.js, ui.js
 
 ### Test 7 - Add element to local storage (yljokes.js )
 
@@ -84,4 +84,61 @@ Tested By: Adrienn Tuba, 2020.09.27.
 * Call function to enlarge the size of the pictures.
     * **Expected:** Pictures are enlarged after clicking on them.
     * **Result:** Pictures are enlarged after clicking on them.
+
+### Test 12 - setGalleryPictures() - ui.js
+
+* Call method to create a new img element and set the attributes of it after getting a path as an input.
+    * **Expected:** New img element created with attributes set to it.
+    * **Result:** 'Uncaught (in promise) ReferenceError: img is not defined.
+* **Bugfix-0.2 executed:**  "img" changed to "line"
+* **New test:**
+    * **Expected:** New img element created with attributes set to it.
+    * **Result:** New img element created with attributes set to it.
+
+### Test 13 - dipslayCategs() - ui.js
+
+* Call method to display a dropdown menu with the categories.
+    * **Expected:** Display a dropdown menu with the possible categories.
+    * **Result:** Display a dropdown menu with the possible categories.
+
+### Test 14 - clearCards() - ui.js
+
+* Call method to clear screen from cards before loading the chosen category's jokes.
+    * **Expected:** Screen is cleared from the cards.
+    * **Result:** Screen is cleared from the cards.
+
+### Test 15 - removeLoading() - ui.js
+
+* Call method to remove loading gif from home page.
+   * **Expected:** After the jokes are queried the loading gif disappears.
+   * **Result:** After the jokes are queried the loading gif disappears.
+
+### Test 16 - addHeader() - ui.js
+
+* Call method to display current category's header.
+   * **Expected:** Current category's header is displayed.
+   * **Result:** Current category's header is displayed.
+
+### Test 17 - createJokeCards() - ui.js
+
+*  Call method to get the joke container element, crete and set divs, heads, labels, inputs,bodys, paragraphs to the jokes.
+    * **Expected:** To get joke container, created and set new elements.
+    * **Result:** Got joke container, created and set new elements.
+
+### Test 18 - setMemeOfTheDay() - ui.js
+
+* Call method to set attributes to meme of the day.
+    * **Expected:** Attributes to be set.
+    * **Result:** Attributes are set.
+
+### Test 19 - setModalData(src) - ui.js
+
+* Call method to set the attributes of the enlarged picture.
+    * **Expected:** Attributes to be set
+    * **Result:** Attributes are set.
+
+### Test 20 - noContentYet(msg) - ui.js
+* Call method to print text to the screen in case there are no jokes saved in the local storage.
+    * **Expected:** Text on the screen to inform the user that it has no jokes saved.
+    * **Result:** Text on the screen to inform the user that it has no jokes saved.
 
