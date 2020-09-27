@@ -14,6 +14,6 @@ class Util{
     static memeOfTheDayGenerator(){
         var date=new Date();
         var dateDay=date.getDate();
-        return ((date.getDay()+1)*dateDay)/2;
+        return Math.floor(((date.getDay()+1)*dateDay)/2);
     }
 }
