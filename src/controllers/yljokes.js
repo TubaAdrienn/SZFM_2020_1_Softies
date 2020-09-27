@@ -19,7 +19,11 @@ function addLikeListener() {
     document.querySelectorAll('.like-box').forEach(item => {
         item.addEventListener('click', (e) => {
             let id = e.target.id;
-            get.removeFromLocalStorage(id)
+            if (e.target.checked) {
+                get.saveJokesToLocalStorage(id, document.getElementById(`${id}-phar`).textContent);
+            } else {
+                get.removeFromLocalStorage(id)
+            }
         });
     })
 }
