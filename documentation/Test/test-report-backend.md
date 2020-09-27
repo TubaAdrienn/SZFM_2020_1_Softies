@@ -48,9 +48,9 @@
 Tests can be found in the the test folder.
 Tested By: Adrienn Tuba, 2020.09.27.
 
-# Controller testing: yljokes.js
+### Controller testing: yljokes.js
 
-## Test 7 - Add element to local storage (yljokes.js )
+### Test 7 - Add element to local storage (yljokes.js )
 
 * Remove element from local storage by unchecking the like box, add element to local storage by checking the like box (in case the user changed its mind)
     * **Expected:** Add element to local storage after checking the like box.
@@ -71,3 +71,17 @@ Tested By: Adrienn Tuba, 2020.09.27.
 * Call function to remove joke from local storage trigerred by clicking.
     * **Expected:** Joke is removed from the local storage after clicking in the like box.
     * **Result:** Joke is removed from the local storage after clicking in the like box.
+
+
+### Test 10 - addEventListener('DOMContentLoaded'...) - gallery.js
+
+* Trigger event to load DOM content.
+    * **Expected**: Meme pictures are loaded from imgsrc.txt and displayed to the page.
+    * **Result**: Meme pictures are loaded from imgsrc.txt and displayed to the page.
+
+### Test 11 - addImgListener() - gallery.js
+
+* Call function to enlarge the size of the pictures.
+    * **Expected:** Pictures are enlarged after clicking on them.
+    * **Result:** Pictures are enlarged after clicking on them.
+
