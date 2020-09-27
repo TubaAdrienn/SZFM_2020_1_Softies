@@ -168,21 +168,21 @@ Tested By: Adrienn Tuba, 2020.09.27.
     * **Result:** After clicking on memes, their size became larger.
 
 
-### Loading the categories, jokes, and pictures - main.js(52)
+### Test 24 - Loading the categories, jokes, and pictures - main.js(52)
 
 * Triggers event to load DOM content of the page such as categories, jokes and pictures.
     * **Expected:** Query jokes, categories, pictures, after jokes are queried remove loading gif.
     * **Result:** Query jokes, categories, pictures, after queried loading gif is removed.
 
 
-### Listening to categories - main.js(74)
+### Test 25 - Listening to categories - main.js(74)
 
 * Add clicking event to categories.
     * **Expected:** After clicking, the screen is cleared from the old cards, the chosen category jokes are displayed, the header is changed according to the category.
     * **Result:**  After clicking, the screen is cleared from the old cards, the chosen category jokes are displayed, the header is changed according to the category.
 
 
-### Listening to searchbar - main.js(102)
+### Test 26 - Listening to searchbar - main.js(102)
 
 * Add clicking event to searchbar.
     * **Expected:** After clicking on search, display the jokes containing that word.
@@ -191,7 +191,7 @@ Tested By: Adrienn Tuba, 2020.09.27.
     * **Result:** An informative text is displayed to the user that there is no joke containing that word.
 
 
-### Test 23 - Listening to filter button - main.js(93)
+### Test 27 - Listening to filter button - main.js(93)
 
 * Filtering the content from inappropriate jokes.
    * **Expected:** Filter box is checked: only appropriate jokes.
