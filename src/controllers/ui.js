@@ -120,9 +120,10 @@ class UI {
         modal.innerHTML="";
         const modalDiv=document.createElement("div");
         const newImg=document.createElement("img");
+        modalDiv.style="max-width:100%;"
         newImg.setAttribute('src', `../resources/${src}`);
         newImg.alt = "meme";
-        newImg.style="max-width: 70vw; max-height: 70vh;"
+        newImg.style="max-width: 100%; max-height: 70vh;"
         modalDiv.appendChild(newImg);
         modal.appendChild(modalDiv);
     }
