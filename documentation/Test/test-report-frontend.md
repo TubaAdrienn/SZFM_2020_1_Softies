@@ -64,6 +64,7 @@ style="float: left; margin-right: 10px;" />
     3. Result: Modifying the date, new meme generated
 
 Tested By: Mátyás Fenyvesi, 2020.09.27.
+
 # Operating System: Windows
 # Browser name: Google Chrome, Firefox, Opera, Edge
 ## Devices: Laptop, PC
@@ -146,6 +147,72 @@ style="float: left; margin-right: 10px;" />
 
 Tested By: Csaba Szilágyi, 2020.09.27.
 
+# Operating System: Android
+# Browser name: Google Chrome
+## Devices: Mobile
 
+* Test 1:
+    - Menu button press:
+    - Expected: Drop-down list showed up, where we can find menu bar buttons for every page and we can navigate between them.
+    - Result: Menu bar buttons were showed up, and working (Screenshot)
+
+<img src="img/menu.png"
+alt="Menu on mobile"
+style="float: left; margin-right: 10px;" />
+
+* Test 2:
+    - Checkbox click:
+    - Exprected: Box filled (or unfilled, if it was filled before)
+    - Result: Box works well
+
+* Test 3:
+    - Responsivity works by changing browser size (and fit for mobile):
+    - Expected: Elements go to the right position
+    - Result: Work correctly, and good on mobile.
+
+* Test 4:
+    - Image full screen in gallery on mobile:
+    - Expected: Vertical full screen is work.
+    - Result: It is work. (Screenshot)
+
+<img src="img/fullscreen.png"
+alt="Fullscreen on mobile"
+style="float: left; margin-right: 10px;" />
+
+* Test 5:
+    - Your Liked Jokes checkbox:
+    - Expected: Liked jokes are saved
+    - Result: Jokes are saved (screenshot)
+
+<img src="img/likedjokesmobile.png"
+alt="Your Liked Jokes checkbox"
+style="float: left; margin-right: 10px;" />
+
+* Test 6:
+    - Unliked jokes:
+    - Expected: Unliked jokes are deleted from Your liked Jokes after a refresh or page switch.
+    - Result: Deleting works well.
+
+* Test 7:
+    - Search bar test:
+    - Expected: Can we search.
+    - Result: Searching works.
+
+* Test 8:
+    - Random joke generation:
+    - Expected: Click to home button or navigate to home site, new jokes are generated
+    - Result: New jokes are generated everytime.
+
+* Test 9:
+    - More button click for loading more joke:
+    - Expected: Another jokes are loaded.
+    - Result: More jokes were loaded.
+
+* Test 10:
+    - Meme of the day:
+    - Expected: Everyday generates new memes.
+    - Result: New meme generated everyday.
+
+Tested By: Csaba Szilágyi and Adrienn Tuba, 2020.09.27.
 
 
