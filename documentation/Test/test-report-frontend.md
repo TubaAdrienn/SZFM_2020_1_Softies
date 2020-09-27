@@ -62,3 +62,5 @@ style="float: left; margin-right: 10px;" />
     1. Meme of the day
     2. Expected: Everyday generates new memes
     3. Result: Modifying the date, new meme generated
+
+Tested By: Mátyás Fenyvesi, 2020.09.27.
