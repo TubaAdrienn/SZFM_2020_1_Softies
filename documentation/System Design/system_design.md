@@ -133,8 +133,26 @@ In the menu bar, the menu items are buttons with the ability to redirect the use
 
 
 ## 8. Abstract domain model
-* Domain specification, concepts
-* Abstract components and their relationship
+Domain specification
+
+The website will follow the MVC architectural modell even though it does not actully contain any kind of modell part since every data is fetched trough a WebAPI and is processed directly.
+Beside this, the every page will have its controller file and a html file with bootstrap and CSS that can be considered the view. There is also a file to implement DOM manipulation.
+
+1. DAO: 
+     - The DAO class will implement the fetches and Local storage manipulation.
+
+2. View:
+     - This will contain the structural elements of the website
+     - The bootstrap and CSS will be in charge of design
+
+3. Backend
+     - DOM manipulation
+     - Event listeners
+     - Processing the data from DAOs
+
+<img src="abstr.png"
+     alt="Local Storage"/>
+
 
 ## 9. Architectural design
 **Main Components of the design**
