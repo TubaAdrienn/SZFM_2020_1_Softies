@@ -13,7 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
 function addImgListener() {
     imgCont.addEventListener('click', function (e) {
         if (e.target.classList.contains("open-modal")) {
-            let src = e.target.src.slice(32);
+            let src = e.target.id;
+            console.log(src);
             ui.setModalData(src);
         }
     });

@@ -105,7 +105,7 @@ class UI {
         src.forEach(line => {
             let newImg = document.createElement('img');
             newImg.setAttribute('src', line);
-            newImg.id= src.slice(13);
+            newImg.id= line.slice(13);
             newImg.style = "margin-right: 10px; margin-left: 10px; width: 400px; margin-bottom: 30px"
             newImg.alt = "meme";
             newImg.className= "open-modal";
@@ -122,7 +122,7 @@ class UI {
         const newImg=document.createElement("img");
         newImg.setAttribute('src', `../resources/${src}`);
         newImg.alt = "meme";
-        newImg.style="max-width: 70vw; max-height: 70vh;"
+        newImg.style="max-width: 60wv; max-height: 60vh;"
         modalDiv.appendChild(newImg);
         modal.appendChild(modalDiv);
     }
