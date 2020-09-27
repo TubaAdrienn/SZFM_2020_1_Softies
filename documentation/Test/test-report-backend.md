@@ -48,7 +48,7 @@
 Tests can be found in the the test folder.
 Tested By: Adrienn Tuba, 2020.09.27.
 
-### Controller testing: yljokes.js, gallery.js, ui.js
+### Controller testing: yljokes.js, gallery.js, ui.js, main.js
 
 ### Test 7 - Add element to local storage (yljokes.js )
 
@@ -138,7 +138,65 @@ Tested By: Adrienn Tuba, 2020.09.27.
     * **Result:** Attributes are set.
 
 ### Test 20 - noContentYet(msg) - ui.js
+
 * Call method to print text to the screen in case there are no jokes saved in the local storage.
     * **Expected:** Text on the screen to inform the user that it has no jokes saved.
     * **Result:** Text on the screen to inform the user that it has no jokes saved.
 
+### Test 21 - addButtonListener() - main.js
+
+* Call function to add clicking event to the MORE button.
+    * **Expected:** After clicking on the MORE button, load and display more jokes.
+    * **Result:** After clicking on the MORE button, more jokes are loaded and displayed.
+
+* Call function to load more jokes to the page after clicking the 'MORE' button.
+   * **Expected:** More jokes are loaded.
+   * **Result:** More jokes are loaded.
+
+### Test 22 - addLikeListener() - main.js
+
+* Call function to save / remove jokes to / from the local storage after clicking the box next to the 'Like' text.
+   * **Expected:** Jokes are saved to local storage after check in the like box.
+   * **Result:** Jokes are saved to local storage after check in the like box.
+   * **Expected:** Joke sare removed from local storage after uncheck the box.
+   * **Result:** Jokes are removed from local storage after uncheck the box.
+
+### Test 23 - addImgListener() - main.js
+
+* Call this function to add clicking event to the images stored in imgContainer.
+    * **Expected:** After clicking on memes, their size should be larger.
+    * **Result:** After clicking on memes, their size became larger.
+
+
+### Test 24 - Loading the categories, jokes, and pictures - main.js(52)
+
+* Triggers event to load DOM content of the page such as categories, jokes and pictures.
+    * **Expected:** Query jokes, categories, pictures, after jokes are queried remove loading gif.
+    * **Result:** Query jokes, categories, pictures, after queried loading gif is removed.
+
+
+### Test 25 - Listening to categories - main.js(74)
+
+* Add clicking event to categories.
+    * **Expected:** After clicking, the screen is cleared from the old cards, the chosen category jokes are displayed, the header is changed according to the category.
+    * **Result:**  After clicking, the screen is cleared from the old cards, the chosen category jokes are displayed, the header is changed according to the category.
+
+
+### Test 26 - Listening to searchbar - main.js(102)
+
+* Add clicking event to searchbar.
+    * **Expected:** After clicking on search, display the jokes containing that word.
+    * **Result:** After clicking on search, the jokes containing that word are displayed.
+    * **Expected:** If the word is not found in none of the jokes then display an informative text to the user that there is no joke containing that word.
+    * **Result:** An informative text is displayed to the user that there is no joke containing that word.
+
+
+### Test 27 - Listening to filter button - main.js(93)
+
+* Filtering the content from inappropriate jokes.
+   * **Expected:** Filter box is checked: only appropriate jokes.
+   * **Result:** Filter box is checked: only appripriate jokes.
+   * **Ecxepted:** Filter box is unchecked: jokes are not filtered.
+   * **Result:** Filter box is unchecked: jokes are not filtered.
+
+Tested By: Anna Egyed, 2020.09.27.
