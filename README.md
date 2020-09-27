@@ -25,3 +25,5 @@ This repository contains a simple web portal displaying jokes. The portal is cre
 
 ### Other technologies :mag_right:
 * [RapidAPI JokeAPI v2](https://rapidapi.com/Sv443/api/jokeapi-v2?endpoint=apiendpoint_e5399e8c-6633-4c02-8063-42e2dd17e9fe)
+* [Bootstrap](https://bootswatch.com/lux/)
+* [JQery](https://jquery.com/)
