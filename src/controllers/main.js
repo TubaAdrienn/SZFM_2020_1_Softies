@@ -9,7 +9,6 @@ let moreButtn = document.querySelector('.btn-more');
 let category = "Any";
 let flags = "&blacklistFlags=nsfw,racist,sexist"
 
-
 //Add Button Listener function
 function addButtonListener() {
     moreButtn = document.querySelector('.btn-more');
@@ -56,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
     get.getJokes(category, 3, flags).then((resp) => {
         var keys = Object.keys(localStorage);
         let liked;
-        //ui.removeLoading();
+        ui.removeLoading();
         resp.jokes.jokes.forEach(joke => {
             liked = keys.includes(joke.id.toString());
             let jokeToDisplay = Util.checkJokeParts(joke);
@@ -108,12 +107,16 @@ search.addEventListener('click', function (e) {
         ui.addHeader("Search");
         var keys = Object.keys(localStorage);
         let liked;
-        get.getJokesBySearch(searchBar.value).then((resp) => {
-            resp.jokes.jokes.forEach(joke => {
-                liked = keys.includes(joke.id.toString());
-                let jokeToDisplay = Util.checkJokeParts(joke);
-                ui.createJokeCards("70vw", jokeToDisplay, joke.id, false, liked);
-            });
+        get.getJokesBySearch(searchBar.value, flags).then((resp) => {
+            if (resp.jokes.jokes == undefined) {
+                ui.addHeader("No joke contains the word.");
+            } else {
+                resp.jokes.jokes.forEach(joke => {
+                    liked = keys.includes(joke.id.toString());
+                    let jokeToDisplay = Util.checkJokeParts(joke);
+                    ui.createJokeCards("70vw", jokeToDisplay, joke.id, false, liked);
+                });
+            }
         })
     }
 });
