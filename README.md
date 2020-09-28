@@ -2,6 +2,8 @@
 
 This repository contains a simple web portal displaying jokes. The portal is created by using HTML, CSS and JavaScript. It will display different kind of jokes depending on the users' chosen categories. The site keeps the users up-to-date with the meme of the day and saves liked jokes for later.
 
+Website: [Softies Joke Website](http://softiesjokesite.epizy.com/)
+
 ## Team: Sofities  :mortar_board:
 
 * Tuba Adrienn
